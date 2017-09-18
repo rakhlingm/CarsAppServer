@@ -72,6 +72,7 @@ public class AdminResource {
 			message = "Login succesfull";
 			message = request.getSession().getId();
 			System.out.println(message);
+			System.out.println("Yes");
 			return new Message(message);
 		} catch (Exception e) {
 			throw new MessageException("Login failed. Possibly wrong user/password. Try again");
